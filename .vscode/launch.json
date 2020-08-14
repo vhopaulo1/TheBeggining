@@ -1,0 +1,128 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "TheBeggining (Debug)",
+			"request": "launch",
+			"preLaunchTask": "TheBeggining Win64 Debug Build",
+			"program": "D:\\GitHub\\TheBeggining\\Binaries\\Win64\\UE4-Win64-Debug.exe",
+			"args": [
+			],
+			"cwd": "D:\\Games\\UE_4.25",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\Games\\UE_4.25\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "TheBeggining (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "TheBeggining Win64 DebugGame Build",
+			"program": "D:\\GitHub\\TheBeggining\\Binaries\\Win64\\UE4-Win64-DebugGame.exe",
+			"args": [
+			],
+			"cwd": "D:\\Games\\UE_4.25",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\Games\\UE_4.25\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "TheBeggining (Development)",
+			"request": "launch",
+			"preLaunchTask": "TheBeggining Win64 Development Build",
+			"program": "D:\\GitHub\\TheBeggining\\Binaries\\Win64\\UE4.exe",
+			"args": [
+			],
+			"cwd": "D:\\Games\\UE_4.25",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\Games\\UE_4.25\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "TheBeggining (Shipping)",
+			"request": "launch",
+			"preLaunchTask": "TheBeggining Win64 Shipping Build",
+			"program": "D:\\GitHub\\TheBeggining\\Binaries\\Win64\\UE4-Win64-Shipping.exe",
+			"args": [
+			],
+			"cwd": "D:\\Games\\UE_4.25",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\Games\\UE_4.25\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "TheBeggining (Test)",
+			"request": "launch",
+			"preLaunchTask": "TheBeggining Win64 Test Build",
+			"program": "D:\\GitHub\\TheBeggining\\Binaries\\Win64\\UE4-Win64-Test.exe",
+			"args": [
+			],
+			"cwd": "D:\\Games\\UE_4.25",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\Games\\UE_4.25\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "TheBegginingEditor (Debug)",
+			"request": "launch",
+			"preLaunchTask": "TheBegginingEditor Win64 Debug Build",
+			"program": "D:\\Games\\UE_4.25\\Engine\\Binaries\\Win64\\UE4Editor-Win64-Debug.exe",
+			"args": [
+				"D:\\GitHub\\TheBeggining\\TheBeggining.uproject"
+			],
+			"cwd": "D:\\Games\\UE_4.25",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\Games\\UE_4.25\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "TheBegginingEditor (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "TheBegginingEditor Win64 DebugGame Build",
+			"program": "D:\\Games\\UE_4.25\\Engine\\Binaries\\Win64\\UE4Editor-Win64-DebugGame.exe",
+			"args": [
+				"D:\\GitHub\\TheBeggining\\TheBeggining.uproject"
+			],
+			"cwd": "D:\\Games\\UE_4.25",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\Games\\UE_4.25\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "TheBegginingEditor (Development)",
+			"request": "launch",
+			"preLaunchTask": "TheBegginingEditor Win64 Development Build",
+			"program": "D:\\Games\\UE_4.25\\Engine\\Binaries\\Win64\\UE4Editor.exe",
+			"args": [
+				"D:\\GitHub\\TheBeggining\\TheBeggining.uproject"
+			],
+			"cwd": "D:\\Games\\UE_4.25",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "D:\\Games\\UE_4.25\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "Generate Project Files",
+			"type": "clr",
+			"request": "launch",
+			"program": "D:\\Games\\UE_4.25\\Engine\\Binaries\\DotNET\\UnrealBuildTool.exe",
+			"console": "externalTerminal",
+			"args": [
+				"-projectfiles",
+				"-vscode",
+				"-project=\"D:\\GitHub\\TheBeggining\\TheBeggining.uproject\"",
+				"-game",
+				"-engine"
+			],
+			"internalConsoleOptions": "openOnSessionStart",
+			"cwd": "D:\\Games\\UE_4.25"
+		}
+	]
+}
