@@ -51,5 +51,9 @@ private:
 	UFUNCTION()
 		void OnStopJump();
 	UFUNCTION()
-		void Hook();
+		void OnInteract();
+	UFUNCTION()
+		void OnHook();
+	UFUNCTION()
+		void OnUseItem();
 };

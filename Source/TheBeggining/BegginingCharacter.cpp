@@ -52,7 +52,9 @@ void ABegginingCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInput
 
 	PlayerInputComponent->BindAction(TEXT("Jump"), EInputEvent::IE_Pressed, this, &ABegginingCharacter::OnStartJump);
 	PlayerInputComponent->BindAction(TEXT("Jump"), EInputEvent::IE_Released, this, &ABegginingCharacter::OnStopJump);
-	PlayerInputComponent->BindAction(TEXT("Hook"), EInputEvent::IE_Pressed, this, &ABegginingCharacter::Hook);
+	PlayerInputComponent->BindAction(TEXT("Interact"), EInputEvent::IE_Pressed, this, &ABegginingCharacter::OnInteract);
+	PlayerInputComponent->BindAction(TEXT("Hook"), EInputEvent::IE_Pressed, this, &ABegginingCharacter::OnHook);
+	PlayerInputComponent->BindAction(TEXT("UseItem"), EInputEvent::IE_Pressed, this, &ABegginingCharacter::OnUseItem);
 
 }
 
@@ -100,7 +102,17 @@ void ABegginingCharacter::OnStopJump()
 	bPressedJump = false;
 }
 
-void ABegginingCharacter::Hook()
+void ABegginingCharacter::OnInteract()
 {
+	GEngine->AddOnScreenDebugMessage(-1, 2.0f, FColor::Emerald, TEXT("Interagiu!"));
+}
 
+void ABegginingCharacter::OnHook()
+{
+	GEngine->AddOnScreenDebugMessage(-1, 2.0f, FColor::Red, TEXT("Ativou Hook!"));
+}
+
+void ABegginingCharacter::OnUseItem()
+{
+	GEngine->AddOnScreenDebugMessage(-1, 2.0f, FColor::Silver, TEXT("Usou o item"));
 }
